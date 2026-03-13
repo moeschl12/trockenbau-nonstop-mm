@@ -1,8 +1,7 @@
-import { SiteConfig } from '../../../handwerk-v2/config/siteConfig';
-
-const config: SiteConfig = {
+export const siteConfig = {
   // ── FIRMA ──
   companyName: "Trockenbau Non Stop M.M",
+  tagline: "Ihr Trockenbau-Experte in Chemnitz",
   customerSlug: "trockenbau-nonstop-mm",
   branche: "trockenbau",
 
@@ -69,4 +68,4 @@ const config: SiteConfig = {
   },
 };
 
-export default config;
+export default siteConfig;
