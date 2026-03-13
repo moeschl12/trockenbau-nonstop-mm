@@ -49,7 +49,7 @@ export function ContactSection() {
               </h3>
 
               <div className="space-y-5">
-                <a href={`tel:${siteConfig.phone}`}
+                <a href={`tel:${(siteConfig as any).phone}`}
                   className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:shadow-md transition-all duration-200 group">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ backgroundColor: "color-mix(in srgb, var(--color-secondary) 12%, transparent)" }}>
@@ -57,12 +57,12 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide">Telefon</p>
-                    <p className="font-semibold text-gray-900 dark:text-white">{siteConfig.phoneDisplay}</p>
+                    <p className="font-semibold text-gray-900 dark:text-white">{(siteConfig as any).phoneDisplay}</p>
                   </div>
                 </a>
 
-                {siteConfig.whatsapp && (
-                  <a href={`https://wa.me/${siteConfig.whatsapp}`} target="_blank" rel="noopener noreferrer"
+                {(siteConfig as any).whatsapp && (
+                  <a href={`https://wa.me/${(siteConfig as any).whatsapp}`} target="_blank" rel="noopener noreferrer"
                     className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:shadow-md transition-all duration-200 group">
                     <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 bg-green-100 dark:bg-green-900/30">
                       <MessageCircle size={20} className="text-green-600 dark:text-green-400" />
@@ -74,7 +74,7 @@ export function ContactSection() {
                   </a>
                 )}
 
-                <a href={`mailto:${siteConfig.email}`}
+                <a href={`mailto:${(siteConfig as any).email}`}
                   className="flex items-center gap-4 p-4 rounded-2xl bg-gray-50 dark:bg-gray-900 hover:shadow-md transition-all duration-200">
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
                     style={{ backgroundColor: "color-mix(in srgb, var(--color-secondary) 12%, transparent)" }}>
@@ -82,7 +82,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide">E-Mail</p>
-                    <p className="font-semibold text-gray-900 dark:text-white">{siteConfig.email}</p>
+                    <p className="font-semibold text-gray-900 dark:text-white">{(siteConfig as any).email}</p>
                   </div>
                 </a>
 
@@ -93,7 +93,7 @@ export function ContactSection() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-500 uppercase tracking-wide">Adresse</p>
-                    <p className="font-semibold text-gray-900 dark:text-white">{siteConfig.address}</p>
+                    <p className="font-semibold text-gray-900 dark:text-white">{(siteConfig as any).address}</p>
                   </div>
                 </div>
               </div>

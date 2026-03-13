@@ -5,19 +5,19 @@ import { siteConfig } from "@/config/siteConfig";
 import { Phone, ArrowDown, MessageCircle } from "lucide-react";
 
 export function HeroSection() {
-  const { heroStyle } = siteConfig.layout;
+  const { heroStyle } = (siteConfig as any).layout;
 
   if (heroStyle === "minimal") {
     return (
       <section className="pt-32 pb-20 bg-white dark:bg-gray-950">
         <div className="section-container text-center">
-          <p className="section-eyebrow mb-4">{siteConfig.industry}</p>
+          <p className="section-eyebrow mb-4">{(siteConfig as any).industry}</p>
           <h1 className="section-title mb-6">{siteConfig.tagline}</h1>
-          <p className="section-subtitle mx-auto mb-10">{siteConfig.description}</p>
+          <p className="section-subtitle mx-auto mb-10">{(siteConfig as any).description}</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a href="#kontakt" className="btn-primary">Kostenlos anfragen</a>
-            <a href={`tel:${siteConfig.phone}`} className="btn-secondary">
-              <Phone size={18} />{siteConfig.phoneDisplay}
+            <a href={`tel:${(siteConfig as any).phone}`} className="btn-secondary">
+              <Phone size={18} />{(siteConfig as any).phoneDisplay}
             </a>
           </div>
         </div>
@@ -30,13 +30,13 @@ export function HeroSection() {
       <section className="min-h-screen flex items-center pt-20 bg-white dark:bg-gray-950">
         <div className="section-container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
-            <p className="section-eyebrow mb-4">{siteConfig.industry} · {siteConfig.city}</p>
+            <p className="section-eyebrow mb-4">{(siteConfig as any).industry} · {(siteConfig as any).city}</p>
             <h1 className="section-title mb-6">{siteConfig.tagline}</h1>
-            <p className="section-subtitle mb-10">{siteConfig.description}</p>
+            <p className="section-subtitle mb-10">{(siteConfig as any).description}</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#kontakt" className="btn-primary">Kostenlos anfragen</a>
-              <a href={`tel:${siteConfig.phone}`} className="btn-secondary">
-                <Phone size={18} />{siteConfig.phoneDisplay}
+              <a href={`tel:${(siteConfig as any).phone}`} className="btn-secondary">
+                <Phone size={18} />{(siteConfig as any).phoneDisplay}
               </a>
             </div>
           </div>
@@ -65,7 +65,7 @@ export function HeroSection() {
           >
             <div className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "var(--color-secondary)" }} />
             <span className="text-sm font-medium tracking-wide" style={{ color: "var(--color-secondary)" }}>
-              {siteConfig.industry} · {siteConfig.city}
+              {(siteConfig as any).industry} · {(siteConfig as any).city}
             </span>
           </div>
 
@@ -76,14 +76,14 @@ export function HeroSection() {
           </h1>
 
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-xl mb-10">
-            {siteConfig.description}
+            {(siteConfig as any).description}
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mb-16">
             <a href="#kontakt" className="btn-primary text-base px-10 py-4">Kostenlos anfragen</a>
-            {siteConfig.whatsapp && (
+            {(siteConfig as any).whatsapp && (
               <a
-                href={`https://wa.me/${siteConfig.whatsapp}`}
+                href={`https://wa.me/${(siteConfig as any).whatsapp}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-secondary text-base px-10 py-4 !text-white !border-white/30 hover:!border-white"

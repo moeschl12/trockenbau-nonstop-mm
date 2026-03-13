@@ -6,10 +6,10 @@ import { siteConfig } from "@/config/siteConfig";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
-  { label: "Leistungen", href: "#leistungen", show: siteConfig.sections.services },
-  { label: "Über uns", href: "#ueber-uns", show: siteConfig.sections.about },
-  { label: "Projekte", href: "#projekte", show: siteConfig.sections.projects },
-  { label: "Kontakt", href: "#kontakt", show: siteConfig.sections.contact },
+  { label: "Leistungen", href: "#leistungen", show: (siteConfig as any).sections.services },
+  { label: "Über uns", href: "#ueber-uns", show: (siteConfig as any).sections.about },
+  { label: "Projekte", href: "#projekte", show: (siteConfig as any).sections.projects },
+  { label: "Kontakt", href: "#kontakt", show: (siteConfig as any).sections.contact },
 ].filter((l) => l.show);
 
 export function Navbar() {
@@ -36,7 +36,7 @@ export function Navbar() {
             className="w-9 h-9 rounded-xl flex items-center justify-center font-bold text-sm transition-transform duration-300 group-hover:scale-110"
             style={{ backgroundColor: "var(--color-secondary)", color: "var(--color-secondary-text)" }}
           >
-            {siteConfig.logo.text}
+            {(siteConfig as any).logo.text}
           </div>
           <span className={`font-bold text-lg transition-colors duration-300 ${scrolled ? "text-gray-900 dark:text-white" : "text-white"}`}
             style={{ fontFamily: "var(--font-display)" }}>
@@ -57,9 +57,9 @@ export function Navbar() {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
-          <a href={`tel:${siteConfig.phone}`} className="btn-primary text-sm px-6 py-3">
+          <a href={`tel:${(siteConfig as any).phone}`} className="btn-primary text-sm px-6 py-3">
             <Phone size={16} />
-            {siteConfig.phoneDisplay}
+            {(siteConfig as any).phoneDisplay}
           </a>
         </div>
 
@@ -84,9 +84,9 @@ export function Navbar() {
               {link.label}
             </a>
           ))}
-          <a href={`tel:${siteConfig.phone}`} className="btn-primary w-full justify-center mt-4">
+          <a href={`tel:${(siteConfig as any).phone}`} className="btn-primary w-full justify-center mt-4">
             <Phone size={16} />
-            {siteConfig.phoneDisplay}
+            {(siteConfig as any).phoneDisplay}
           </a>
         </div>
       )}

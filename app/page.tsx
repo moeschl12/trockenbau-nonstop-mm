@@ -24,7 +24,7 @@ export default function Home() {
         {sections.contact && <ContactSection />}
       </main>
       <Footer />
-      {siteConfig.whatsapp && <WhatsAppButton />}
+      {(siteConfig as any).whatsapp && <WhatsAppButton />}
       <StickyPhone />
       <CookieBanner />
     </>

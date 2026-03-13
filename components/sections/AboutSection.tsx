@@ -18,7 +18,7 @@ export function AboutSection() {
               style={{ backgroundColor: "var(--color-secondary)" }}
             >
               <p className="text-3xl font-bold" style={{ color: "var(--color-secondary-text)", fontFamily: "var(--font-display)" }}>
-                {siteConfig.foundingYear}
+                {(siteConfig as any).foundingYear}
               </p>
               <p className="text-xs font-medium tracking-wide uppercase" style={{ color: "var(--color-secondary-text)", opacity: 0.8 }}>
                 Gegründet
@@ -43,7 +43,7 @@ export function AboutSection() {
             </div>
 
             <ul className="space-y-3 mb-10">
-              {siteConfig.benefits.slice(0, 4).map((b) => (
+              {(siteConfig as any).benefits.slice(0, 4).map((b) => (
                 <li key={b.title} className="flex items-center gap-3">
                   <CheckCircle2 size={20} className="flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
                   <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">

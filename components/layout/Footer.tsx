@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/siteConfig";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 
 export function Footer() {
-  const { footerStyle } = siteConfig.layout;
+  const { footerStyle } = (siteConfig as any).layout;
 
   if (footerStyle === "simple") {
     return (
@@ -28,16 +28,16 @@ export function Footer() {
                 className="w-9 h-9 rounded-xl flex items-center justify-center font-bold flex-shrink-0"
                 style={{ backgroundColor: "var(--color-secondary)", color: "var(--color-secondary-text)" }}
               >
-                {siteConfig.logo.text}
+                {(siteConfig as any).logo.text}
               </div>
               <span className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-display)" }}>
                 {siteConfig.companyName}
               </span>
             </div>
-            <p className="text-gray-500 text-sm leading-relaxed">{siteConfig.description}</p>
+            <p className="text-gray-500 text-sm leading-relaxed">{(siteConfig as any).description}</p>
           </div>
 
-          {siteConfig.sections.services && (
+          {(siteConfig as any).sections.services && (
             <div>
               <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Leistungen</h3>
               <ul className="space-y-3">
@@ -56,20 +56,20 @@ export function Footer() {
             <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Kontakt</h3>
             <ul className="space-y-4">
               <li>
-                <a href={`tel:${siteConfig.phone}`} className="flex items-start gap-3 text-sm text-gray-500 hover:text-white transition-colors">
+                <a href={`tel:${(siteConfig as any).phone}`} className="flex items-start gap-3 text-sm text-gray-500 hover:text-white transition-colors">
                   <Phone size={16} className="mt-0.5 flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
-                  {siteConfig.phoneDisplay}
+                  {(siteConfig as any).phoneDisplay}
                 </a>
               </li>
               <li>
-                <a href={`mailto:${siteConfig.email}`} className="flex items-start gap-3 text-sm text-gray-500 hover:text-white transition-colors">
+                <a href={`mailto:${(siteConfig as any).email}`} className="flex items-start gap-3 text-sm text-gray-500 hover:text-white transition-colors">
                   <Mail size={16} className="mt-0.5 flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
-                  {siteConfig.email}
+                  {(siteConfig as any).email}
                 </a>
               </li>
               <li className="flex items-start gap-3 text-sm text-gray-500">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
-                {siteConfig.address}
+                {(siteConfig as any).address}
               </li>
             </ul>
           </div>
