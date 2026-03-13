@@ -34,10 +34,10 @@ export default function ImpressumPage() {
                 {siteConfig.contact?.email}
               </a>
             </p>
-            {siteConfig.website ?? "" && (
+            {(siteConfig as any).website && (
               <p>
                 <strong>Website:</strong>{" "}
-                <a href={siteConfig.website ?? ""} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
+                <a href={(siteConfig as any).website ?? ""} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
                   {siteConfig.website ?? ""}
                 </a>
               </p>
