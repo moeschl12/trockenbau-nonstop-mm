@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #1a1a2e;
+    --color-secondary: #C9A84C;
+    --color-accent: #16213e;
+    --color-primary-text: #ffffff;
+    --color-secondary-text: #1a1a2e;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    -webkit-font-smoothing: antialiased;
+    font-family: var(--font-body), sans-serif;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-20 lg:py-28;
+  }
+
+  .section-title {
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 dark:text-white;
+    font-family: var(--font-display), sans-serif;
+  }
+
+  .section-subtitle {
+    @apply text-lg text-gray-500 dark:text-gray-400 max-w-2xl;
+  }
+
+  .section-eyebrow {
+    @apply text-sm font-semibold tracking-widest uppercase;
+    color: var(--color-secondary);
+  }
+
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-4
+           text-sm font-semibold tracking-wide transition-all duration-300
+           hover:shadow-lg hover:scale-105 active:scale-95;
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-text);
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 rounded-full px-8 py-4
+           text-sm font-semibold tracking-wide transition-all duration-300
+           border-2 hover:scale-105 active:scale-95;
+    border-color: var(--color-secondary);
+    color: var(--color-secondary);
+  }
+
+  .btn-secondary:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-text);
+  }
+
+  .card {
+    @apply rounded-2xl border border-gray-100 dark:border-gray-800
+           bg-white dark:bg-gray-900 transition-all duration-300
+           hover:shadow-xl hover:-translate-y-1;
+  }
+
+  .nav-link {
+    @apply text-sm font-medium transition-colors duration-200
+           text-gray-600 dark:text-gray-300;
+  }
+
+  .nav-link:hover {
+    color: var(--color-secondary);
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(135deg, var(--color-secondary), var(--color-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .bg-hero-gradient {
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent) 100%);
+  }
+
+  .animation-delay-100 { animation-delay: 100ms; }
+  .animation-delay-200 { animation-delay: 200ms; }
+  .animation-delay-300 { animation-delay: 300ms; }
+  .animation-delay-400 { animation-delay: 400ms; }
+  .animation-delay-500 { animation-delay: 500ms; }
+}

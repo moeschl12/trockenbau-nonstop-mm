@@ -1,0 +1,330 @@
+{
+  "maler": {
+    "industry": "Malerbetrieb",
+    "icon": "Paintbrush",
+    "taglines": ["Ihr Maler in {city}", "Farbe & Qualität in {city}", "Malerarbeiten in {city}", "Ihr Profi für Farbe in {city}"],
+    "descriptions": ["Professionelle Malerarbeiten in {city} und Umgebung. Innen- und Außenanstriche, Tapezierarbeiten und Fassadensanierung – alles aus einer Hand.", "Ihr zuverlässiger Malerbetrieb in {city}. Von der Wandgestaltung bis zur Fassadenrenovierung – wir bringen Farbe in Ihr Zuhause.", "Malermeisterbetrieb in {city}. Hochwertige Anstriche, kreative Wandgestaltung und professionelle Tapezierarbeiten seit Jahren."],
+    "heroImages": ["https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=1200&q=85", "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=1200&q=85"],
+    "services": [
+      {"name": "Innenrenovierung", "shortDesc": "Wände, Decken, Tapeten – alles aus einer Hand.", "description": "Komplette Innenrenovierung Ihrer Räume.", "icon": "Paintbrush"},
+      {"name": "Fassadenarbeiten", "shortDesc": "Außenanstrich und Fassadensanierung.", "description": "Professioneller Außenanstrich.", "icon": "Building2"},
+      {"name": "Tapezierarbeiten", "shortDesc": "Alle Arten von Tapeten fachgerecht verlegt.", "description": "Von klassisch bis modern.", "icon": "Grid3x3"},
+      {"name": "Lackierarbeiten", "shortDesc": "Türen, Fenster, Heizkörper – streichen & lackieren.", "description": "Fachgerechtes Lackieren aller Oberflächen.", "icon": "Brush"},
+      {"name": "Schimmelbeseitigung", "shortDesc": "Fachgerechte Schimmelentfernung.", "description": "Nachhaltige Schimmelbeseitigung.", "icon": "ShieldCheck"},
+      {"name": "Bodenbeläge", "shortDesc": "Laminat, Vinyl und Teppich verlegt.", "description": "Wir verlegen alle gängigen Bodenbeläge.", "icon": "Layers"}
+    ],
+    "projects": [
+      {"title": "Altbausanierung {city}", "description": "Komplette Renovierung eines Altbaus.", "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=85", "category": "Innenrenovierung"},
+      {"title": "Fassade Mehrfamilienhaus", "description": "Fassadenerneuerung inkl. neuem Anstrich.", "image": "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?w=800&q=85", "category": "Fassade"},
+      {"title": "Bürorenovierung", "description": "Komplette Renovierung eines Bürokomplexes in {city}.", "image": "https://images.unsplash.com/photo-1562259949-e8e7689d7828?w=800&q=85", "category": "Gewerbe"}
+    ],
+    "reviews": [
+      {"name": "Klaus M.", "text": "Super Arbeit! Pünktlich, sauber und das Ergebnis ist top."},
+      {"name": "Sandra K.", "text": "Wir sind sehr zufrieden. Die Wohnung sieht aus wie neu."},
+      {"name": "Thomas W.", "text": "Professionelle Arbeit zu fairen Preisen. Klare Empfehlung!"}
+    ],
+    "faqs": [
+      {"question": "Wie lange dauert eine Zimmerrenovierung?", "answer": "Ein Zimmer dauert in der Regel 1–2 Tage."},
+      {"question": "Streichen Sie auch außen?", "answer": "Ja, wir übernehmen Fassadenarbeiten aller Art."},
+      {"question": "Geben Sie Garantie auf Ihre Arbeit?", "answer": "Ja, wir gewähren 5 Jahre Garantie."},
+      {"question": "Kann ich die Farbe selbst aussuchen?", "answer": "Natürlich! Wir beraten Sie gerne bei der Farbauswahl."}
+    ],
+    "stats": [{"value": "500+", "label": "Projekte"}, {"value": "15+", "label": "Jahre Erfahrung"}, {"value": "98%", "label": "Zufriedene Kunden"}, {"value": "24h", "label": "Antwortzeit"}],
+    "benefits": [
+      {"title": "Meisterbetrieb", "description": "Zertifizierter Malermeister.", "icon": "Award"},
+      {"title": "Festpreisgarantie", "description": "Keine versteckten Kosten.", "icon": "ShieldCheck"},
+      {"title": "Termintreu", "description": "Wir halten unsere Deadlines.", "icon": "Clock"},
+      {"title": "Lokal in {city}", "description": "Schnell vor Ort.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Maler {city}", "Malerarbeiten {city}", "Malerbetrieb {city}", "Fassade {city}", "Tapezieren {city}"],
+    "schema": "HomeAndConstructionBusiness",
+    "priceRange": "€€"
+  },
+  "elektriker": {
+    "industry": "Elektrotechnik",
+    "icon": "Zap",
+    "taglines": ["Ihr Elektriker in {city}", "Elektrotechnik in {city}", "Strom & Sicherheit in {city}", "Ihr Profi für Elektro in {city}"],
+    "descriptions": ["Professionelle Elektroinstallationen in {city}. Von der einfachen Reparatur bis zur kompletten Hausinstallation.", "Ihr Elektriker in {city}. Neuinstallationen, Reparaturen, Smart Home und Sicherheitstechnik.", "Elektrotechnik vom Fachmann in {city}. Schnell, sicher und zu fairen Preisen."],
+    "heroImages": ["https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=1200&q=85", "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=85"],
+    "services": [
+      {"name": "Elektroinstallation", "shortDesc": "Neu- und Umbauten fachgerecht installiert.", "description": "Komplette Elektroinstallation.", "icon": "Zap"},
+      {"name": "Smart Home", "shortDesc": "Intelligente Haustechnik.", "description": "Moderne Smart Home Lösungen.", "icon": "Home"},
+      {"name": "Sicherheitstechnik", "shortDesc": "Alarm- und Überwachungssysteme.", "description": "Professionelle Sicherheitssysteme.", "icon": "ShieldCheck"},
+      {"name": "Photovoltaik", "shortDesc": "Solaranlagen professionell installiert.", "description": "Planung und Installation von PV-Anlagen.", "icon": "Sun"},
+      {"name": "E-Mobilität", "shortDesc": "Wallbox Installation.", "description": "Fachgerechte Ladestation Installation.", "icon": "Car"},
+      {"name": "Notdienst", "shortDesc": "24/7 bei Stromausfall.", "description": "Schnelle Hilfe bei Stromausfall.", "icon": "AlertTriangle"}
+    ],
+    "projects": [
+      {"title": "Neubau {city}", "description": "Komplette Elektroinstallation eines Einfamilienhauses.", "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85", "category": "Neubau"},
+      {"title": "Smart Home Projekt", "description": "Vollständige Smart Home Installation.", "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=85", "category": "Smart Home"},
+      {"title": "Gewerbeobjekt {city}", "description": "Elektroinstallation eines Bürokomplexes.", "image": "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800&q=85", "category": "Gewerbe"}
+    ],
+    "reviews": [
+      {"name": "Michael B.", "text": "Schnelle und zuverlässige Arbeit. Notdienst war in 30 Minuten da."},
+      {"name": "Anna S.", "text": "Smart Home perfekt umgesetzt. Sehr kompetent."},
+      {"name": "Peter K.", "text": "Faire Preise, pünktlich und saubere Arbeit."}
+    ],
+    "faqs": [
+      {"question": "Haben Sie einen Notdienst?", "answer": "Ja, wir sind 24/7 erreichbar unter {phone}."},
+      {"question": "Wie lange dauert eine Elektroinstallation?", "answer": "Eine Standardinstallation dauert 1–3 Tage."},
+      {"question": "Installieren Sie auch Photovoltaikanlagen?", "answer": "Ja, wir planen und installieren Solaranlagen."},
+      {"question": "Können Sie Smart Home nachrüsten?", "answer": "Ja, wir rüsten bestehende Häuser nach."}
+    ],
+    "stats": [{"value": "800+", "label": "Projekte"}, {"value": "12+", "label": "Jahre Erfahrung"}, {"value": "24/7", "label": "Notdienst"}, {"value": "99%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Meisterbetrieb", "description": "Zertifizierter Elektromeister.", "icon": "Award"},
+      {"title": "24/7 Notdienst", "description": "Immer erreichbar.", "icon": "AlertTriangle"},
+      {"title": "Festpreis", "description": "Transparent ohne Überraschungen.", "icon": "ShieldCheck"},
+      {"title": "Lokal in {city}", "description": "Schnell vor Ort.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Elektriker {city}", "Elektroinstallation {city}", "Smart Home {city}", "Photovoltaik {city}", "Notdienst Elektriker {city}"],
+    "schema": "Electrician",
+    "priceRange": "€€"
+  },
+  "sanitaer": {
+    "industry": "Sanitär & Heizung",
+    "icon": "Droplets",
+    "taglines": ["Ihr Sanitärbetrieb in {city}", "Sanitär & Heizung in {city}", "Klempner in {city}", "Ihr Profi für Bad & Heizung in {city}"],
+    "descriptions": ["Sanitär und Heizungstechnik in {city}. Badsanierung, Heizungsinstallation und Rohrreparaturen.", "Ihr Klempner in {city}. Von der Rohrinstallation bis zur Badsanierung.", "Sanitär vom Fachmann in {city}. Notdienst, Badsanierung und Heizungsservice."],
+    "heroImages": ["https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=1200&q=85", "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=85"],
+    "services": [
+      {"name": "Badsanierung", "shortDesc": "Komplette Badsanierung nach Ihren Wünschen.", "description": "Planung und Umsetzung Ihres Traumbades.", "icon": "Bath"},
+      {"name": "Heizungsinstallation", "shortDesc": "Moderne Heizsysteme effizient installiert.", "description": "Installation und Wartung aller Heizsysteme.", "icon": "Flame"},
+      {"name": "Rohrreparatur", "shortDesc": "Rohrbruch? Wir sind schnell vor Ort.", "description": "Schnelle Reparatur bei Rohrbruch.", "icon": "Wrench"},
+      {"name": "Notdienst", "shortDesc": "24/7 bei Rohrbruch.", "description": "Sofortige Hilfe bei Wassernotfällen.", "icon": "AlertTriangle"},
+      {"name": "Wärmepumpe", "shortDesc": "Zukunftssichere Wärmepumpen.", "description": "Planung und Installation von Wärmepumpen.", "icon": "Wind"},
+      {"name": "Wartung & Service", "shortDesc": "Regelmäßige Wartung.", "description": "Professionelle Heizungswartung.", "icon": "Settings"}
+    ],
+    "projects": [
+      {"title": "Badsanierung {city}", "description": "Komplette Badsanierung mit modernen Armaturen.", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=85", "category": "Badsanierung"},
+      {"title": "Heizungsmodernisierung", "description": "Austausch alter Ölheizung durch Wärmepumpe.", "image": "https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=800&q=85", "category": "Heizung"},
+      {"title": "Neubau Sanitär", "description": "Komplette Sanitärinstallation eines Neubaus.", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=85", "category": "Neubau"}
+    ],
+    "reviews": [
+      {"name": "Bernd H.", "text": "Rohrbruch am Wochenende – innerhalb einer Stunde war der Techniker da!"},
+      {"name": "Monika L.", "text": "Traumhaftes Bad, perfekt umgesetzt."},
+      {"name": "Frank S.", "text": "Heizung ausgefallen – schnelle Hilfe, faire Preise."}
+    ],
+    "faqs": [
+      {"question": "Haben Sie einen Notdienst?", "answer": "Ja, wir sind 24/7 erreichbar."},
+      {"question": "Wie lange dauert eine Badsanierung?", "answer": "Ca. 1–2 Wochen je nach Umfang."},
+      {"question": "Installieren Sie Wärmepumpen?", "answer": "Ja, inkl. Förderantrag."},
+      {"question": "Bieten Sie Wartungsverträge an?", "answer": "Ja, mit unserem Wartungsvertrag bleibt Ihre Heizung fit."}
+    ],
+    "stats": [{"value": "600+", "label": "Projekte"}, {"value": "20+", "label": "Jahre Erfahrung"}, {"value": "24/7", "label": "Notdienst"}, {"value": "98%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Meisterbetrieb", "description": "Zertifizierter Sanitärmeister.", "icon": "Award"},
+      {"title": "24/7 Notdienst", "description": "Immer erreichbar.", "icon": "AlertTriangle"},
+      {"title": "Festpreis", "description": "Transparent ohne Überraschungen.", "icon": "ShieldCheck"},
+      {"title": "Lokal in {city}", "description": "Schnell vor Ort.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Sanitär {city}", "Klempner {city}", "Badsanierung {city}", "Heizung {city}", "Rohrbruch {city}"],
+    "schema": "Plumber",
+    "priceRange": "€€"
+  },
+  "dachdecker": {
+    "industry": "Dachdeckerei",
+    "icon": "Home",
+    "taglines": ["Ihr Dachdecker in {city}", "Dacharbeiten in {city}", "Dachdeckerei in {city}", "Ihr Profi für das Dach in {city}"],
+    "descriptions": ["Professionelle Dacharbeiten in {city}. Neueindeckung, Reparatur und Dachdämmung.", "Ihr Dachdecker in {city}. Vom Dachfenster bis zur kompletten Neueindeckung.", "Dachdeckermeisterbetrieb in {city}. Alle Dacharbeiten aus einer Hand."],
+    "heroImages": ["https://images.unsplash.com/photo-1635424710928-0544e8512eae?w=1200&q=85", "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=85"],
+    "services": [
+      {"name": "Dacheindeckung", "shortDesc": "Neueindeckung mit Ziegel, Schiefer oder Blech.", "description": "Komplette Neueindeckung aller Dacharten.", "icon": "Home"},
+      {"name": "Dachreparatur", "shortDesc": "Schnelle Hilfe bei undichtem Dach.", "description": "Reparatur bei Sturmschäden.", "icon": "Wrench"},
+      {"name": "Dachdämmung", "shortDesc": "Energiesparen durch Dämmung.", "description": "Effiziente Dachdämmung.", "icon": "Layers"},
+      {"name": "Dachfenster", "shortDesc": "Velux und andere fachgerecht eingebaut.", "description": "Einbau und Reparatur von Dachfenstern.", "icon": "Sun"},
+      {"name": "Flachdach", "shortDesc": "Flachdach abdichten und sanieren.", "description": "Professionelle Flachdachsanierung.", "icon": "Minus"},
+      {"name": "Notdienst", "shortDesc": "Sofortige Hilfe nach Sturm.", "description": "Schnelle Notreparatur.", "icon": "AlertTriangle"}
+    ],
+    "projects": [
+      {"title": "Neueindeckung {city}", "description": "Komplette Dacheindeckung mit Tonziegeln.", "image": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?w=800&q=85", "category": "Neueindeckung"},
+      {"title": "Flachdachsanierung", "description": "Sanierung eines undichten Flachdachs.", "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85", "category": "Flachdach"},
+      {"title": "Dachgaube einbauen", "description": "Einbau einer Dachgaube inkl. Dämmung.", "image": "https://images.unsplash.com/photo-1635424710928-0544e8512eae?w=800&q=85", "category": "Umbau"}
+    ],
+    "reviews": [
+      {"name": "Rainer M.", "text": "Nach dem Sturm schnell geholfen. Professionell und fair."},
+      {"name": "Elisabeth K.", "text": "Neues Dach top eingedeckt. Sauber und pünktlich."},
+      {"name": "Günter S.", "text": "Sehr zufrieden mit der Dämmung. Heizkosten gesunken."}
+    ],
+    "faqs": [
+      {"question": "Wie lange hält ein neues Dach?", "answer": "30–50 Jahre je nach Material."},
+      {"question": "Haben Sie Notdienst nach Sturm?", "answer": "Ja, 24/7 erreichbar."},
+      {"question": "Übernehmen Sie die Versicherungsabwicklung?", "answer": "Ja, wir helfen bei der Dokumentation."},
+      {"question": "Welche Dachziegel empfehlen Sie?", "answer": "Das hängt vom Gebäude ab – wir beraten Sie gerne."}
+    ],
+    "stats": [{"value": "400+", "label": "Dächer"}, {"value": "25+", "label": "Jahre Erfahrung"}, {"value": "24/7", "label": "Notdienst"}, {"value": "99%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Meisterbetrieb", "description": "Zertifizierter Dachdeckermeister.", "icon": "Award"},
+      {"title": "Sturmschaden", "description": "Sofortige Hilfe.", "icon": "AlertTriangle"},
+      {"title": "10J Garantie", "description": "Garantie auf alle Arbeiten.", "icon": "ShieldCheck"},
+      {"title": "Lokal in {city}", "description": "Schnell vor Ort.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Dachdecker {city}", "Dacheindeckung {city}", "Dachreparatur {city}", "Dachdämmung {city}", "Sturmschaden {city}"],
+    "schema": "HomeAndConstructionBusiness",
+    "priceRange": "€€€"
+  },
+  "schreiner": {
+    "industry": "Schreinerei",
+    "icon": "Hammer",
+    "taglines": ["Ihr Schreiner in {city}", "Holzhandwerk in {city}", "Schreinerei in {city}", "Ihr Tischler in {city}"],
+    "descriptions": ["Schreinerei in {city}. Maßmöbel, Türen, Fenster und Innenausbau nach Ihren Wünschen.", "Ihr Schreiner in {city}. Individuelle Möbel und professioneller Innenausbau.", "Holzhandwerk vom Fachmann in {city}. Von der Einbauküche bis zum Dachstuhl."],
+    "heroImages": ["https://images.unsplash.com/photo-1504148455328-c376907d081c?w=1200&q=85", "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?w=1200&q=85"],
+    "services": [
+      {"name": "Maßmöbel", "shortDesc": "Individuelle Möbel nach Ihren Wünschen.", "description": "Maßgefertigte Möbel für jeden Raum.", "icon": "Hammer"},
+      {"name": "Türen & Fenster", "shortDesc": "Einbau und Reparatur.", "description": "Professioneller Einbau.", "icon": "DoorOpen"},
+      {"name": "Innenausbau", "shortDesc": "Tresen, Regale, Einbauschränke.", "description": "Hochwertiger Innenausbau.", "icon": "Home"},
+      {"name": "Küchenbau", "shortDesc": "Einbauküchen nach Maß.", "description": "Individuelle Einbauküchen.", "icon": "UtensilsCrossed"},
+      {"name": "Restaurierung", "shortDesc": "Alte Möbel restauriert.", "description": "Liebevolle Restaurierung.", "icon": "RefreshCw"},
+      {"name": "Dachstuhl", "shortDesc": "Dachstuhlbau und Reparatur.", "description": "Professioneller Dachstuhlbau.", "icon": "Triangle"}
+    ],
+    "projects": [
+      {"title": "Einbauschrank {city}", "description": "Maßgefertigter Einbauschrank.", "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&q=85", "category": "Maßmöbel"},
+      {"title": "Küche nach Maß", "description": "Individuelle Einbauküche mit Insel.", "image": "https://images.unsplash.com/photo-1588854337115-1c67d9247e4d?w=800&q=85", "category": "Küche"},
+      {"title": "Ladenausbau {city}", "description": "Kompletter Innenausbau.", "image": "https://images.unsplash.com/photo-1504148455328-c376907d081c?w=800&q=85", "category": "Gewerbe"}
+    ],
+    "reviews": [
+      {"name": "Sabine M.", "text": "Der Einbauschrank ist ein Traum! Perfekt geplant."},
+      {"name": "Jürgen K.", "text": "Tolle Arbeit, sehr detailverliebt."},
+      {"name": "Petra S.", "text": "Alte Möbel wunderschön restauriert."}
+    ],
+    "faqs": [
+      {"question": "Wie lange dauert ein Maßmöbel?", "answer": "2–6 Wochen von Planung bis Fertigstellung."},
+      {"question": "Kommen Sie zur Beratung?", "answer": "Ja, kostenlose Aufmaßtermine bei Ihnen."},
+      {"question": "Welche Hölzer verwenden Sie?", "answer": "Regionale und zertifizierte Hölzer."},
+      {"question": "Reparieren Sie alte Möbel?", "answer": "Ja, wir restaurieren Möbel aller Art."}
+    ],
+    "stats": [{"value": "300+", "label": "Projekte"}, {"value": "20+", "label": "Jahre Erfahrung"}, {"value": "100%", "label": "Handarbeit"}, {"value": "98%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Meisterbetrieb", "description": "Zertifizierter Schreinermeister.", "icon": "Award"},
+      {"title": "Regional", "description": "Holz aus der Region.", "icon": "Leaf"},
+      {"title": "Maßarbeit", "description": "Jedes Stück individuell.", "icon": "Ruler"},
+      {"title": "Lokal in {city}", "description": "Persönlicher Service.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Schreiner {city}", "Tischler {city}", "Maßmöbel {city}", "Einbauschrank {city}", "Innenausbau {city}"],
+    "schema": "HomeAndConstructionBusiness",
+    "priceRange": "€€€"
+  },
+  "fliesenleger": {
+    "industry": "Fliesenlegerei",
+    "icon": "Grid3x3",
+    "taglines": ["Ihr Fliesenleger in {city}", "Fliesen & Naturstein in {city}", "Fliesenlegerei in {city}", "Ihr Profi für Fliesen in {city}"],
+    "descriptions": ["Professionelles Fliesenlegen in {city}. Bad, Küche, Terrasse – sauber und präzise.", "Ihr Fliesenleger in {city}. Von der Beratung bis zur Fertigstellung.", "Fliesenlegerei vom Fachmann in {city}. Alles aus einer Hand."],
+    "heroImages": ["https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1200&q=85", "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=1200&q=85"],
+    "services": [
+      {"name": "Badsanierung", "shortDesc": "Komplette Badsanierung mit Fliesen.", "description": "Ihr Traumbad.", "icon": "Bath"},
+      {"name": "Bodenfliesen", "shortDesc": "Alle Fliesen- und Natursteinböden.", "description": "Präzises Verlegen.", "icon": "Grid3x3"},
+      {"name": "Terrasse & Außen", "shortDesc": "Frost- und rutschfeste Außenfliesen.", "description": "Langlebige Außenfliesen.", "icon": "Sun"},
+      {"name": "Naturstein", "shortDesc": "Marmor, Travertin und Granit.", "description": "Hochwertige Natursteinarbeiten.", "icon": "Gem"},
+      {"name": "Reparaturen", "shortDesc": "Einzelne Fliesen austauschen.", "description": "Schnelle Reparatur.", "icon": "Wrench"},
+      {"name": "Verfugung", "shortDesc": "Fugen erneuern und versiegeln.", "description": "Professionelle Fugensanierung.", "icon": "PenTool"}
+    ],
+    "projects": [
+      {"title": "Badsanierung {city}", "description": "Großformatige Fliesen im Bad.", "image": "https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?w=800&q=85", "category": "Bad"},
+      {"title": "Terrasse Naturstein", "description": "Travertin-Platten auf der Terrasse.", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=85", "category": "Außen"},
+      {"title": "Gewerbeboden {city}", "description": "Großflächige Bodenverlegung.", "image": "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=800&q=85", "category": "Gewerbe"}
+    ],
+    "reviews": [
+      {"name": "Claudia M.", "text": "Bad sieht fantastisch aus! Präzise und sauber."},
+      {"name": "Norbert K.", "text": "Terrasse perfekt verlegt."},
+      {"name": "Ingrid S.", "text": "Alte Fliesen raus, neue rein – in 3 Tagen!"}
+    ],
+    "faqs": [
+      {"question": "Wie lange dauert eine Badsanierung?", "answer": "5–10 Tage je nach Größe."},
+      {"question": "Helfen Sie bei der Fliesenauswahl?", "answer": "Ja, wir beraten und zeigen Muster."},
+      {"question": "Verlegen Sie Großformate?", "answer": "Ja, bis 120x120 cm."},
+      {"question": "Können Sie alte Fliesen entfernen?", "answer": "Ja, inkl. Entsorgung."}
+    ],
+    "stats": [{"value": "400+", "label": "Projekte"}, {"value": "15+", "label": "Jahre Erfahrung"}, {"value": "5★", "label": "Bewertung"}, {"value": "98%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Meisterbetrieb", "description": "Zertifizierter Fliesenlegermeister.", "icon": "Award"},
+      {"title": "Präzision", "description": "Millimetergenaues Arbeiten.", "icon": "Ruler"},
+      {"title": "Materialberatung", "description": "Wir finden die richtigen Fliesen.", "icon": "ShieldCheck"},
+      {"title": "Lokal in {city}", "description": "Persönlicher Service.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Fliesenleger {city}", "Fliesen {city}", "Badsanierung {city}", "Naturstein {city}", "Terrassenfliesen {city}"],
+    "schema": "HomeAndConstructionBusiness",
+    "priceRange": "€€"
+  },
+  "trockenbau": {
+    "industry": "Trockenbau",
+    "icon": "Layers",
+    "taglines": ["Ihr Trockenbauer in {city}", "Trockenbau & Innenausbau in {city}", "Trockenbau in {city}", "Ihr Profi für Innenausbau in {city}"],
+    "descriptions": ["Professioneller Trockenbau in {city}. Wände, Decken, Akustik und Brandschutz.", "Ihr Trockenbauer in {city}. Vom Stellwand bis zum kompletten Innenausbau.", "Trockenbau vom Fachmann in {city}. Wohnräume, Büros und Gewerbe."],
+    "heroImages": ["https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=85", "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&q=85"],
+    "services": [
+      {"name": "Ständerwände", "shortDesc": "Schnelle Raumteilung.", "description": "Flexible Raumgestaltung.", "icon": "Layers"},
+      {"name": "Abgehängte Decken", "shortDesc": "Design- und Akustikdecken.", "description": "Moderne Deckengestaltung.", "icon": "ArrowDown"},
+      {"name": "Akustiklösungen", "shortDesc": "Schallschutz für Büro und Wohnen.", "description": "Professionelle Akustiklösungen.", "icon": "Volume2"},
+      {"name": "Brandschutz", "shortDesc": "Brandschutzwände und -decken.", "description": "Zertifizierter Brandschutz.", "icon": "ShieldCheck"},
+      {"name": "Dämmung", "shortDesc": "Wärme- und Schallschutz.", "description": "Effiziente Dämmung.", "icon": "Wind"},
+      {"name": "Innenausbau", "shortDesc": "Kompletter Innenausbau.", "description": "Büros und Ladengeschäfte.", "icon": "Building2"}
+    ],
+    "projects": [
+      {"title": "Büroausbau {city}", "description": "Kompletter Innenausbau.", "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=85", "category": "Gewerbe"},
+      {"title": "Dachausbau {city}", "description": "Dachboden zu Wohnraum.", "image": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=85", "category": "Wohnbau"},
+      {"title": "Akustikdecke", "description": "Optimale Raumakustik.", "image": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=85", "category": "Akustik"}
+    ],
+    "reviews": [
+      {"name": "Dirk M.", "text": "Büroausbau perfekt und pünktlich."},
+      {"name": "Karin L.", "text": "Dachausbau super umgesetzt."},
+      {"name": "Holger S.", "text": "Akustik deutlich besser. Sehr zufrieden!"}
+    ],
+    "faqs": [
+      {"question": "Wie schnell können Sie starten?", "answer": "In 1–2 Wochen."},
+      {"question": "Arbeiten Sie im laufenden Betrieb?", "answer": "Ja, wir koordinieren flexibel."},
+      {"question": "Bieten Sie Brandschutzlösungen an?", "answer": "Ja, zertifiziert nach DIN-Norm."},
+      {"question": "Welche Materialien nutzen Sie?", "answer": "Knauf und Rigips."}
+    ],
+    "stats": [{"value": "350+", "label": "Projekte"}, {"value": "10+", "label": "Jahre Erfahrung"}, {"value": "50k+", "label": "m² verbaut"}, {"value": "99%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Fachbetrieb", "description": "Zertifizierter Trockenbaufachbetrieb.", "icon": "Award"},
+      {"title": "Schnell", "description": "Kurze Bauzeiten.", "icon": "Clock"},
+      {"title": "Sauber", "description": "Minimaler Schmutz.", "icon": "ShieldCheck"},
+      {"title": "Lokal in {city}", "description": "Persönlicher Service.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Trockenbau {city}", "Innenausbau {city}", "Gipskarton {city}", "Schallschutz {city}", "Büroausbau {city}"],
+    "schema": "HomeAndConstructionBusiness",
+    "priceRange": "€€"
+  },
+  "bauunternehmen": {
+    "industry": "Bauunternehmen",
+    "icon": "Building2",
+    "taglines": ["Ihr Bauunternehmen in {city}", "Bauen in {city}", "Hochbau & Tiefbau in {city}", "Ihr Baupartner in {city}"],
+    "descriptions": ["Professioneller Hoch- und Tiefbau in {city}. Von der Planung bis zur Schlüsselübergabe.", "Ihr Bauunternehmen in {city}. Neubau, Sanierung und Schlüsselfertigbau.", "Bauunternehmen in {city}. Wir realisieren Ihr Bauprojekt."],
+    "heroImages": ["https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=85", "https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=1200&q=85"],
+    "services": [
+      {"name": "Hochbau", "shortDesc": "Neubau von Wohn- und Gewerbegebäuden.", "description": "Termingerechte Umsetzung.", "icon": "Building2"},
+      {"name": "Tiefbau", "shortDesc": "Erdarbeiten und Fundamente.", "description": "Professionelle Tiefbauarbeiten.", "icon": "Shovel"},
+      {"name": "Sanierung", "shortDesc": "Modernisierung von Altbauten.", "description": "Fachgerechte Sanierung.", "icon": "Wrench"},
+      {"name": "Schlüsselfertig", "shortDesc": "Komplett aus einer Hand.", "description": "Von Planung bis Einzug.", "icon": "Key"},
+      {"name": "Außenanlagen", "shortDesc": "Pflasterarbeiten.", "description": "Professionelle Außenanlagen.", "icon": "Leaf"},
+      {"name": "Abriss", "shortDesc": "Fachgerechter Rückbau.", "description": "Schneller und sicherer Abriss.", "icon": "Hammer"}
+    ],
+    "projects": [
+      {"title": "Mehrfamilienhaus {city}", "description": "Neubau mit 8 Einheiten.", "image": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=85", "category": "Hochbau"},
+      {"title": "Gewerbehalle {city}", "description": "Schlüsselfertige Gewerbehalle.", "image": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85", "category": "Gewerbe"},
+      {"title": "Altbausanierung {city}", "description": "Kernsanierung Gründerzeithaus.", "image": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=85", "category": "Sanierung"}
+    ],
+    "reviews": [
+      {"name": "Thomas K.", "text": "Mehrfamilienhaus pünktlich und in top Qualität!"},
+      {"name": "Sandra M.", "text": "Schlüsselfertiges Haus – alles perfekt."},
+      {"name": "Markus W.", "text": "Sanierung super umgesetzt. Transparent und fair."}
+    ],
+    "faqs": [
+      {"question": "Wie lange dauert ein Einfamilienhaus?", "answer": "Ca. 8–12 Monate."},
+      {"question": "Bieten Sie Finanzierungsberatung an?", "answer": "Wir vermitteln kompetente Partner."},
+      {"question": "Welche Garantie geben Sie?", "answer": "5 Jahre gesetzliche Gewährleistung."},
+      {"question": "Führen Sie kleinere Arbeiten durch?", "answer": "Ja, ab 500€."}
+    ],
+    "stats": [{"value": "200+", "label": "Projekte"}, {"value": "20+", "label": "Jahre Erfahrung"}, {"value": "50+", "label": "Mitarbeiter"}, {"value": "98%", "label": "Zufriedene Kunden"}],
+    "benefits": [
+      {"title": "Erfahrung", "description": "20 Jahre Expertise.", "icon": "Award"},
+      {"title": "Alles aus einer Hand", "description": "Ein Ansprechpartner.", "icon": "Layers"},
+      {"title": "Termintreu", "description": "Wir halten Deadlines.", "icon": "Clock"},
+      {"title": "Lokal in {city}", "description": "Ihr Partner vor Ort.", "icon": "MapPin"}
+    ],
+    "seoKeywords": ["Bauunternehmen {city}", "Hochbau {city}", "Tiefbau {city}", "Sanierung {city}", "Schlüsselfertig {city}"],
+    "schema": "HomeAndConstructionBusiness",
+    "priceRange": "€€€"
+  }
+}
