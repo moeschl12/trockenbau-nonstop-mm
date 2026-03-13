@@ -38,7 +38,7 @@ export default function ImpressumPage() {
               <p>
                 <strong>Website:</strong>{" "}
                 <a href={(siteConfig as any).website ?? ""} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
-                  {siteConfig.website ?? ""}
+                  {(siteConfig as any).website ?? ""}
                 </a>
               </p>
             )}
