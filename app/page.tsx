@@ -10,21 +10,22 @@ import { WhatsAppButton } from "@/components/ui/WhatsAppButton";
 import { StickyPhone } from "@/components/ui/StickyPhone";
 import { CookieBanner } from "@/components/ui/CookieBanner";
 
-const { sections } = siteConfig;
+const cfg = siteConfig as any;
+const sections = cfg.sections ?? { hero: true, services: true, about: true, projects: true, contact: true };
 
 export default function Home() {
   return (
     <>
       <Navbar />
       <main>
-        {sections.hero && <HeroSection />}
-        {sections.services && <ServicesSection />}
-        {sections.about && <AboutSection />}
-        {sections.projects && <ProjectsSection />}
-        {sections.contact && <ContactSection />}
+        {sections.hero !== false && <HeroSection />}
+        {sections.services !== false && <ServicesSection />}
+        {sections.about !== false && <AboutSection />}
+        {sections.projects !== false && <ProjectsSection />}
+        {sections.contact !== false && <ContactSection />}
       </main>
       <Footer />
-      {(siteConfig as any).whatsapp && <WhatsAppButton />}
+      {cfg.contact?.whatsapp && <WhatsAppButton />}
       <StickyPhone />
       <CookieBanner />
     </>
