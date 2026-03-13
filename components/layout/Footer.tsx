@@ -42,9 +42,9 @@ export function Footer() {
               <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Leistungen</h3>
               <ul className="space-y-3">
                 {siteConfig.services.slice(0, 5).map((service) => (
-                  <li key={service.id}>
+                  <li key={service.title}>
                     <a href="#leistungen" className="text-sm text-gray-500 hover:text-white transition-colors">
-                      {service.name}
+                      {service.title}
                     </a>
                   </li>
                 ))}
