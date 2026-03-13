@@ -66,6 +66,15 @@ export const siteConfig = {
     saturday: "08:00 – 14:00",
     sunday: "Geschlossen",
   },
+
+  // ── OPTIONAL ──
+  analytics: {
+    googleAnalyticsId: "",
+  },
+  phoneDisplay: "",
+  phone: "",
+  email: "",
+  address: "",
 };
 
 export default siteConfig;
