@@ -21,24 +21,24 @@ export default function ImpressumPage() {
           <section>
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Anbieter</h2>
             <p>{siteConfig.companyName}</p>
-            <p>{siteConfig.contact.address}</p>
+            <p>{siteConfig.contact?.address}</p>
             <p className="mt-3">
               <strong>Telefon:</strong>{" "}
-              <a href={`tel:${siteConfig.contact.phone}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
-                {siteConfig.contact.phoneDisplay}
+              <a href={`tel:${siteConfig.contact?.phone}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
+                {siteConfig.contact?.phoneDisplay}
               </a>
             </p>
             <p>
               <strong>E-Mail:</strong>{" "}
-              <a href={`mailto:${siteConfig.contact.email}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
-                {siteConfig.contact.email}
+              <a href={`mailto:${siteConfig.contact?.email}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
+                {siteConfig.contact?.email}
               </a>
             </p>
-            {siteConfig.website && (
+            {siteConfig.website ?? "" && (
               <p>
                 <strong>Website:</strong>{" "}
-                <a href={siteConfig.website} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
-                  {siteConfig.website}
+                <a href={siteConfig.website ?? ""} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
+                  {siteConfig.website ?? ""}
                 </a>
               </p>
             )}
@@ -47,7 +47,7 @@ export default function ImpressumPage() {
           <section>
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Verantwortlich für den Inhalt</h2>
             <p>{siteConfig.companyName}</p>
-            <p>{siteConfig.contact.address}</p>
+            <p>{siteConfig.contact?.address}</p>
           </section>
 
           <section>

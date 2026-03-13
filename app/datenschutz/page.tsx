@@ -23,9 +23,9 @@ export default function DatenschutzPage() {
             <p>
               Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br /><br />
               <strong>{siteConfig.companyName}</strong><br />
-              {siteConfig.contact.address}<br />
-              Telefon: {siteConfig.contact.phoneDisplay}<br />
-              E-Mail: {siteConfig.contact.email}
+              {siteConfig.contact?.address}<br />
+              Telefon: {siteConfig.contact?.phoneDisplay}<br />
+              E-Mail: {siteConfig.contact?.email}
             </p>
           </section>
 
@@ -58,7 +58,7 @@ export default function DatenschutzPage() {
             </p>
           </section>
 
-          {siteConfig.analytics.googleAnalyticsId && (
+          {siteConfig.analytics?.googleAnalyticsId && (
             <section>
               <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">5. Google Analytics</h2>
               <p>
@@ -72,7 +72,7 @@ export default function DatenschutzPage() {
           )}
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">{siteConfig.analytics.googleAnalyticsId ? "6." : "5."} Ihre Rechte</h2>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">{siteConfig.analytics?.googleAnalyticsId ? "6." : "5."} Ihre Rechte</h2>
             <p className="mb-3">Sie haben gegenüber uns folgende Rechte hinsichtlich der Sie betreffenden personenbezogenen Daten:</p>
             <ul className="list-disc list-inside space-y-1 ml-2">
               <li>Recht auf Auskunft (Art. 15 DSGVO)</li>
@@ -84,14 +84,14 @@ export default function DatenschutzPage() {
             </ul>
             <p className="mt-3">
               Bei Fragen wenden Sie sich an:{" "}
-              <a href={`mailto:${siteConfig.contact.email}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
-                {siteConfig.contact.email}
+              <a href={`mailto:${siteConfig.contact?.email}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
+                {siteConfig.contact?.email}
               </a>
             </p>
           </section>
 
           <section>
-            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">{siteConfig.analytics.googleAnalyticsId ? "7." : "6."} Beschwerderecht</h2>
+            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">{siteConfig.analytics?.googleAnalyticsId ? "7." : "6."} Beschwerderecht</h2>
             <p>
               Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde über die Verarbeitung Ihrer
               personenbezogenen Daten durch uns zu beschweren.
