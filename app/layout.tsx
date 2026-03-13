@@ -2,90 +2,80 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { siteConfig } from "@/config/siteConfig";
 
+const cfg = siteConfig as any;
+const primaryColor = cfg.design?.primaryColor ?? cfg.colors?.primary ?? "#1a1a2e";
+const accentColor = cfg.design?.accentColor ?? cfg.colors?.secondary ?? "#C9A84C";
+const displayFont = cfg.design?.font ?? cfg.fonts?.display ?? "DM Sans";
+const bodyFont = cfg.fonts?.body ?? "DM Sans";
+const siteUrl = cfg.meta?.siteUrl ?? cfg.seo?.siteUrl ?? "https://example.de";
+const siteTitle = cfg.meta?.title ?? cfg.seo?.defaultTitle ?? cfg.companyName;
+const siteDesc = cfg.meta?.description ?? cfg.seo?.defaultDescription ?? "";
+
 export const metadata: Metadata = {
-  metadataBase: new URL((siteConfig as any).seo.siteUrl),
-  title: {
-    default: (siteConfig as any).seo.defaultTitle,
-    template: (siteConfig as any).seo.titleTemplate,
-  },
-  description: (siteConfig as any).seo.defaultDescription,
-  keywords: (siteConfig as any).seo.keywords,
-  authors: [{ name: siteConfig.companyName }],
+  metadataBase: new URL(siteUrl),
+  title: { default: siteTitle, template: `%s | ${cfg.companyName}` },
+  description: siteDesc,
+  authors: [{ name: cfg.companyName }],
   openGraph: {
     type: "website",
-    locale: (siteConfig as any).seo.locale,
-    url: (siteConfig as any).seo.siteUrl,
-    title: (siteConfig as any).seo.defaultTitle,
-    description: (siteConfig as any).seo.defaultDescription,
-    siteName: siteConfig.companyName,
-    images: [{ url: (siteConfig as any).seo.ogImage, width: 1200, height: 630 }],
+    locale: "de_DE",
+    url: siteUrl,
+    title: siteTitle,
+    description: siteDesc,
+    siteName: cfg.companyName,
   },
-  twitter: {
-    card: "summary_large_image",
-    title: (siteConfig as any).seo.defaultTitle,
-    description: (siteConfig as any).seo.defaultDescription,
-  },
+  twitter: { card: "summary_large_image", title: siteTitle, description: siteDesc },
   robots: { index: true, follow: true },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const { colors, fonts } = siteConfig;
-
   const cssVars = `
     :root {
-      --color-primary: ${colors.primary};
-      --color-secondary: ${colors.secondary};
-      --color-accent: ${colors.accent};
-      --color-primary-text: ${colors.primaryText};
-      --color-secondary-text: ${colors.secondaryText};
-      --font-display: '${fonts.display}';
-      --font-body: '${fonts.body}';
+      --color-primary: ${primaryColor};
+      --color-secondary: ${accentColor};
+      --color-accent: ${accentColor};
+      --color-primary-text: #ffffff;
+      --color-secondary-text: #8a8a9a;
+      --font-display: '${displayFont}';
+      --font-body: '${bodyFont}';
     }
   `;
 
-  const googleFontsUrl = `https://fonts.googleapis.com/css2?family=${fonts.display.replace(/ /g, "+")}:wght@400;500;600;700;800&family=${fonts.body.replace(/ /g, "+")}:wght@400;500;600&display=swap`;
+  const googleFontsUrl = `https://fonts.googleapis.com/css2?family=${displayFont.replace(/ /g, "+")}:wght@400;500;600;700;800&family=${bodyFont.replace(/ /g, "+")}:wght@400;500;600&display=swap`;
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": (siteConfig as any).schema.type,
-    name: siteConfig.companyName,
-    description: (siteConfig as any).description,
-    url: (siteConfig as any).seo.siteUrl,
-    telephone: siteConfig.contact.phone,
-    email: siteConfig.contact.email,
+    "@type": "LocalBusiness",
+    name: cfg.companyName,
+    description: siteDesc,
+    url: siteUrl,
+    telephone: cfg.contact?.phone,
+    email: cfg.contact?.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: siteConfig.contact.address,
-      addressLocality: (siteConfig as any).city,
-      addressRegion: (siteConfig as any).region,
+      streetAddress: cfg.contact?.address,
+      addressLocality: cfg.contact?.city,
+      postalCode: cfg.contact?.zip,
       addressCountry: "DE",
     },
-    areaServed: (siteConfig as any).schema.areaServed,
-    priceRange: (siteConfig as any).schema.priceRange,
-    foundingDate: (siteConfig as any).foundingYear,
   };
 
   return (
-    <html lang={(siteConfig as any).language.default} suppressHydrationWarning>
+    <html lang="de" suppressHydrationWarning>
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href={googleFontsUrl} rel="stylesheet" />
         <style dangerouslySetInnerHTML={{ __html: cssVars }} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        />
-        {siteConfig.analytics.googleAnalyticsId && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+        {cfg.analytics?.googleAnalyticsId && (
           <>
-            <script async src={`https://www.googletagmanager.com/gtag/js?id=${siteConfig.analytics.googleAnalyticsId}`} />
-            <script dangerouslySetInnerHTML={{
-              __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${siteConfig.analytics.googleAnalyticsId}');`
-            }} />
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${cfg.analytics.googleAnalyticsId}`} />
+            <script dangerouslySetInnerHTML={{ __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${cfg.analytics.googleAnalyticsId}');` }} />
           </>
         )}
       </head>
-      <body className={`min-h-screen ${(siteConfig as any).darkMode ? "dark" : ""}`}>
+      <body className="min-h-screen">
         {children}
       </body>
     </html>
