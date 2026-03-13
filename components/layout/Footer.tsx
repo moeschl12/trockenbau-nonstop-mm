@@ -41,7 +41,7 @@ export function Footer() {
             <div>
               <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Leistungen</h3>
               <ul className="space-y-3">
-                {(siteConfig as any).services.slice(0, 5).map((service) => (
+                {(siteConfig as any).services.slice(0, 5).map((service: any) => (
                   <li key={service.title}>
                     <a href="#leistungen" className="text-sm text-gray-500 hover:text-white transition-colors">
                       {service.title}
@@ -77,7 +77,7 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Öffnungszeiten</h3>
             <ul className="space-y-3">
-              {(siteConfig as any).openingHours.map((oh) => (
+              {(siteConfig as any).openingHours.map((oh: any) => (
                 <li key={oh.day} className="flex items-start gap-2">
                   <Clock size={14} className="mt-1 flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
                   <div>

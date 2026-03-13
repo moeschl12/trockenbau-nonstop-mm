@@ -94,7 +94,7 @@ export function HeroSection() {
           </div>
 
           <div className="flex flex-wrap gap-8">
-            {(siteConfig as any).about.highlights.map((h) => (
+            {(siteConfig as any).about.highlights.map((h: any) => (
               <div key={h.label} className="flex flex-col">
                 <span className="text-2xl font-bold text-white" style={{ fontFamily: "var(--font-display)" }}>{h.value}</span>
                 <span className="text-xs text-gray-400 tracking-wide uppercase">{h.label}</span>

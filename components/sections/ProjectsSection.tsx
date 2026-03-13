@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 export async function ProjectsSection() {
   let projects = await getProjects().catch(() => []);
   if (!projects || projects.length === 0) {
-    projects = (siteConfig as any).projects.map((p) => ({
+    projects = (siteConfig as any).projects.map((p: any) => ({
       _id: p.id,
       title: p.title,
       description: p.description,

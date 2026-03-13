@@ -45,7 +45,7 @@ export function Navbar() {
         </Link>
 
         <div className="hidden lg:flex items-center gap-8">
-          {navLinks.map((link) => (
+          {navLinks.map((link: any) => (
             <a
               key={link.href}
               href={link.href}
@@ -74,7 +74,7 @@ export function Navbar() {
 
       {menuOpen && (
         <div className="lg:hidden bg-white dark:bg-gray-950 border-t border-gray-100 dark:border-gray-800 px-4 py-6 space-y-4">
-          {navLinks.map((link) => (
+          {navLinks.map((link: any) => (
             <a
               key={link.href}
               href={link.href}

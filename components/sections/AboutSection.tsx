@@ -32,7 +32,7 @@ export function AboutSection() {
             <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">{(siteConfig as any).about.description}</p>
 
             <div className="grid grid-cols-3 gap-6 mb-8">
-              {(siteConfig as any).about.highlights.map((h) => (
+              {(siteConfig as any).about.highlights.map((h: any) => (
                 <div key={h.label} className="text-center">
                   <p className="text-3xl font-bold mb-1" style={{ color: "var(--color-secondary)", fontFamily: "var(--font-display)" }}>
                     {h.value}
@@ -43,7 +43,7 @@ export function AboutSection() {
             </div>
 
             <ul className="space-y-3 mb-10">
-              {(siteConfig as any).benefits.slice(0, 4).map((b) => (
+              {(siteConfig as any).benefits.slice(0, 4).map((b: any) => (
                 <li key={b.title} className="flex items-center gap-3">
                   <CheckCircle2 size={20} className="flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
                   <span className="text-gray-700 dark:text-gray-300 text-sm font-medium">
