@@ -105,7 +105,7 @@ export function ContactSection() {
                 <h4 className="font-semibold text-gray-900 dark:text-white text-sm uppercase tracking-wide">Öffnungszeiten</h4>
               </div>
               <ul className="space-y-2">
-                {siteConfig.openingHours.map((oh) => (
+                {(siteConfig as any).openingHours.map((oh) => (
                   <li key={oh.day} className="flex justify-between text-sm">
                     <span className="text-gray-500">{oh.day}</span>
                     <span className="font-medium text-gray-900 dark:text-white">{oh.hours}</span>

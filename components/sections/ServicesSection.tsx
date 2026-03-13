@@ -10,7 +10,7 @@ const iconMap: Record<string, any> = {
 export async function ServicesSection() {
   let services = await getServices().catch(() => []);
   if (!services || services.length === 0) {
-    services = siteConfig.services.map((s) => ({
+    services = (siteConfig as any).services.map((s) => ({
       _id: s.id,
       name: s.name,
       shortDesc: s.shortDesc,

@@ -8,7 +8,7 @@ export function Footer() {
     return (
       <footer className="bg-gray-950 text-gray-400 py-8">
         <div className="section-container flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm">© {new Date().getFullYear()} {siteConfig.companyName}. Alle Rechte vorbehalten.</p>
+          <p className="text-sm">© {new Date().getFullYear()} {(siteConfig as any).companyName}. Alle Rechte vorbehalten.</p>
           <div className="flex gap-6">
             <a href="/impressum" className="text-sm hover:text-white transition-colors">Impressum</a>
             <a href="/datenschutz" className="text-sm hover:text-white transition-colors">Datenschutz</a>
@@ -31,7 +31,7 @@ export function Footer() {
                 {(siteConfig as any).logo.text}
               </div>
               <span className="text-white font-bold text-lg" style={{ fontFamily: "var(--font-display)" }}>
-                {siteConfig.companyName}
+                {(siteConfig as any).companyName}
               </span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">{(siteConfig as any).description}</p>
@@ -41,7 +41,7 @@ export function Footer() {
             <div>
               <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Leistungen</h3>
               <ul className="space-y-3">
-                {siteConfig.services.slice(0, 5).map((service) => (
+                {(siteConfig as any).services.slice(0, 5).map((service) => (
                   <li key={service.title}>
                     <a href="#leistungen" className="text-sm text-gray-500 hover:text-white transition-colors">
                       {service.title}
@@ -77,7 +77,7 @@ export function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-6 text-sm tracking-widest uppercase">Öffnungszeiten</h3>
             <ul className="space-y-3">
-              {siteConfig.openingHours.map((oh) => (
+              {(siteConfig as any).openingHours.map((oh) => (
                 <li key={oh.day} className="flex items-start gap-2">
                   <Clock size={14} className="mt-1 flex-shrink-0" style={{ color: "var(--color-secondary)" }} />
                   <div>
@@ -93,7 +93,7 @@ export function Footer() {
 
       <div className="border-t border-gray-800">
         <div className="section-container py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-gray-600">© {new Date().getFullYear()} {siteConfig.companyName}. Alle Rechte vorbehalten.</p>
+          <p className="text-xs text-gray-600">© {new Date().getFullYear()} {(siteConfig as any).companyName}. Alle Rechte vorbehalten.</p>
           <div className="flex items-center gap-6">
             <a href="/impressum" className="text-xs text-gray-600 hover:text-white transition-colors">Impressum</a>
             <a href="/datenschutz" className="text-xs text-gray-600 hover:text-white transition-colors">Datenschutz</a>

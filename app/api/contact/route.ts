@@ -10,7 +10,7 @@ export async function POST(req: Request) {
 
     await resend.emails.send({
       from: "Kontaktformular <onboarding@resend.dev>",
-      to: siteConfig.contact?.email,
+      to: (siteConfig as any).contact?.email,
       subject: `Neue Anfrage von ${name}`,
       html: `
         <h2>Neue Kontaktanfrage</h2>

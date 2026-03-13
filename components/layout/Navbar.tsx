@@ -40,7 +40,7 @@ export function Navbar() {
           </div>
           <span className={`font-bold text-lg transition-colors duration-300 ${scrolled ? "text-gray-900 dark:text-white" : "text-white"}`}
             style={{ fontFamily: "var(--font-display)" }}>
-            {siteConfig.companyName}
+            {(siteConfig as any).companyName}
           </span>
         </Link>
 

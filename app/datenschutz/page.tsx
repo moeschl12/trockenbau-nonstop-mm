@@ -22,10 +22,10 @@ export default function DatenschutzPage() {
             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">1. Verantwortlicher</h2>
             <p>
               Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) ist:<br /><br />
-              <strong>{siteConfig.companyName}</strong><br />
-              {siteConfig.contact?.address}<br />
-              Telefon: {siteConfig.contact?.phoneDisplay}<br />
-              E-Mail: {siteConfig.contact?.email}
+              <strong>{(siteConfig as any).companyName}</strong><br />
+              {(siteConfig as any).contact?.address}<br />
+              Telefon: {(siteConfig as any).contact?.phoneDisplay}<br />
+              E-Mail: {(siteConfig as any).contact?.email}
             </p>
           </section>
 
@@ -84,8 +84,8 @@ export default function DatenschutzPage() {
             </ul>
             <p className="mt-3">
               Bei Fragen wenden Sie sich an:{" "}
-              <a href={`mailto:${siteConfig.contact?.email}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
-                {siteConfig.contact?.email}
+              <a href={`mailto:${(siteConfig as any).contact?.email}`} className="hover:underline" style={{ color: "var(--color-secondary)" }}>
+                {(siteConfig as any).contact?.email}
               </a>
             </p>
           </section>

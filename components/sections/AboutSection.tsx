@@ -11,7 +11,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div className="relative">
             <div className="relative rounded-3xl overflow-hidden aspect-[4/3]">
-              <Image src={siteConfig.about.image} alt={siteConfig.companyName} fill className="object-cover" />
+              <Image src={(siteConfig as any).about.image} alt={(siteConfig as any).companyName} fill className="object-cover" />
             </div>
             <div
               className="absolute -bottom-6 -right-6 rounded-2xl p-6 shadow-xl"
@@ -28,11 +28,11 @@ export function AboutSection() {
 
           <div>
             <p className="section-eyebrow mb-4">Über uns</p>
-            <h2 className="section-title mb-6">{siteConfig.about.title}</h2>
-            <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">{siteConfig.about.description}</p>
+            <h2 className="section-title mb-6">{(siteConfig as any).about.title}</h2>
+            <p className="text-gray-500 dark:text-gray-400 leading-relaxed mb-8">{(siteConfig as any).about.description}</p>
 
             <div className="grid grid-cols-3 gap-6 mb-8">
-              {siteConfig.about.highlights.map((h) => (
+              {(siteConfig as any).about.highlights.map((h) => (
                 <div key={h.label} className="text-center">
                   <p className="text-3xl font-bold mb-1" style={{ color: "var(--color-secondary)", fontFamily: "var(--font-display)" }}>
                     {h.value}
