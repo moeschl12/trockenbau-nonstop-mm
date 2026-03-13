@@ -1,80 +1,83 @@
 export const siteConfig = {
-  // ── FIRMA ──
   companyName: "Trockenbau Non Stop M.M",
   tagline: "Ihr Trockenbau-Experte in Chemnitz",
-  customerSlug: "trockenbau-nonstop-mm",
-  branche: "trockenbau",
-
-  // ── KONTAKT ──
-  contact: {
-    phone: "017684553431",
-    phoneDisplay: "0176 84553431",
-    whatsapp: "4917684553431",
-    email: "morisi123firma@mail.de",
-    address: "Moritzstraße 39",
-    city: "Chemnitz",
-    zip: "09111",
-  },
-
-  // ── META ──
-  meta: {
-    title: "Trockenbau Non Stop M.M – Trockenbau in Chemnitz",
-    description: "Professioneller Trockenbau in Chemnitz und Umgebung. 15 Jahre Erfahrung. Jetzt kostenlos anfragen!",
-    city: "Chemnitz",
-  },
-
-  // ── HERO ──
-  hero: {
-    headline: "Trockenbau in Chemnitz",
-    subheadline: "Professionell. Zuverlässig. Schnell.",
-    description: "Mit über 15 Jahren Erfahrung realisieren wir Ihr Trockenbau-Projekt termingerecht und in höchster Qualität – in Chemnitz und der gesamten Region.",
-    style: "dark-gold",
-  },
-
-  // ── ABOUT ──
-  about: {
-    title: "Ihr Trockenbau-Experte in Chemnitz",
-    description: "Trockenbau Non Stop M.M steht für professionelle Trockenbauarbeiten mit über 15 Jahren Erfahrung. Inhaber Morisi Margoshvili und sein Team führen jeden Auftrag mit höchster Sorgfalt aus – von der einfachen Trennwand bis zum komplexen Deckensystem.",
-    founded: 2009,
-    owner: "Morisi Margoshvili",
-  },
-
-  // ── LEISTUNGEN ──
-  services: [
-    { icon: "Layers", title: "Trennwände", description: "Präzise Trennwände für Wohn- und Gewerberäume – schnell montiert und dauerhaft stabil." },
-    { icon: "Home", title: "Deckenabhängungen", description: "Abgehängte Decken für optimale Raumgestaltung und verbesserte Akustik." },
-    { icon: "Shield", title: "Brandschutz", description: "Brandschutzwände und -decken nach aktuellen Normen für maximale Sicherheit." },
-    { icon: "Volume2", title: "Schallschutz", description: "Schallschutzlösungen für Ruhe und Privatsphäre in jedem Raum." },
-    { icon: "Thermometer", title: "Wärmedämmung", description: "Effektive Wärmedämmung mit Trockenbausystemen für niedrige Energiekosten." },
-    { icon: "Wrench", title: "Renovierung", description: "Modernisierung und Renovierung bestehender Trockenbaukonstruktionen." },
+  industry: "Trockenbau",
+  description: "Professioneller Trockenbau in Chemnitz und Umgebung. 15 Jahre Erfahrung.",
+  foundingYear: "2009",
+  phone: "017684553431",
+  phoneDisplay: "0176 / 84553431",
+  whatsapp: "+4917684553431",
+  email: "morisi123firma@mail.de",
+  website: "",
+  address: "Moritzstraße 39, 09111 Chemnitz",
+  city: "Chemnitz",
+  region: "Sachsen",
+  serviceArea: "Chemnitz und Umgebung",
+  openingHours: [
+    { day: "Montag – Freitag", hours: "07:00 – 18:00 Uhr" },
+    { day: "Samstag", hours: "08:00 – 14:00 Uhr" },
+    { day: "Sonntag", hours: "Geschlossen" },
   ],
-
-  // ── DESIGN ──
-  design: {
-    primaryColor: "#1a1a2e",
-    accentColor: "#C9A84C",
-    font: "dark-gold",
+  colors: {
+    primary: "#1a1a2e",
+    secondary: "#C9A84C",
+    accent: "#16213e",
+    primaryText: "#ffffff",
+    secondaryText: "#ffffff",
   },
-
-  // ── EXTRAS ──
-  showReviews: true,
-  showFaq: true,
-
-  // ── ÖFFNUNGSZEITEN ──
-  openingHours: {
-    monFri: "07:00 – 18:00",
-    saturday: "08:00 – 14:00",
-    sunday: "Geschlossen",
+  fonts: { display: "DM Sans", body: "DM Sans" },
+  darkMode: true,
+  logo: { type: "text" as "text" | "image", text: "TN", imageUrl: "", icon: "Layers" },
+  sections: { hero: true, services: true, about: true, projects: true, reviews: false, stats: false, benefits: false, pricing: false, faq: false, contact: true },
+  layout: { heroStyle: "fullscreen" as "fullscreen" | "split" | "minimal", navStyle: "transparent" as "transparent" | "solid" | "minimal", footerStyle: "full" as "full" | "simple" },
+  language: { default: "de" as "de" | "en", available: ["de"] as ("de" | "en")[] },
+  services: [
+    { id: "s1", name: "Trennwände", shortDesc: "Präzise Trennwände für Wohn- und Gewerberäume.", description: "Schnell montiert und dauerhaft stabil.", icon: "Layers", image: "" },
+    { id: "s2", name: "Deckenabhängungen", shortDesc: "Abgehängte Decken für optimale Raumgestaltung.", description: "Verbesserte Akustik und Ästhetik.", icon: "Home", image: "" },
+    { id: "s3", name: "Brandschutz", shortDesc: "Brandschutzwände nach aktuellen Normen.", description: "Maximale Sicherheit für Ihr Gebäude.", icon: "Shield", image: "" },
+    { id: "s4", name: "Schallschutz", shortDesc: "Schallschutzlösungen für jeden Raum.", description: "Ruhe und Privatsphäre garantiert.", icon: "Volume2", image: "" },
+    { id: "s5", name: "Wärmedämmung", shortDesc: "Effektive Wärmedämmung mit Trockenbausystemen.", description: "Niedrige Energiekosten durch optimale Dämmung.", icon: "Thermometer", image: "" },
+    { id: "s6", name: "Renovierung", shortDesc: "Modernisierung bestehender Konstruktionen.", description: "Fachgerechte Renovierung nach Maß.", icon: "Wrench", image: "" },
+  ],
+  about: {
+    title: "Über Trockenbau Non Stop M.M",
+    description: "Trockenbau Non Stop M.M steht für professionelle Trockenbauarbeiten mit über 15 Jahren Erfahrung. Inhaber Morisi Margoshvili und sein Team führen jeden Auftrag mit höchster Sorgfalt aus.",
+    image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85",
+    highlights: [{ label: "Jahre Erfahrung", value: "15+" }, { label: "Projekte", value: "500+" }, { label: "Zufriedene Kunden", value: "99%" }],
   },
-
-  // ── OPTIONAL ──
-  analytics: {
-    googleAnalyticsId: "",
+  projects: [
+    { id: "p1", title: "Bürokomplex Chemnitz", description: "Komplette Trockenbauarbeiten in einem modernen Bürokomplex.", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85", category: "Gewerbe" },
+    { id: "p2", title: "Wohnanlage Sachsen", description: "Trennwände und Decken in einer großen Wohnanlage.", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85", category: "Wohnbau" },
+    { id: "p3", title: "Schulrenovierung", description: "Brandschutz und Schallschutz in einer Schule.", image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=85", category: "Öffentlich" },
+  ],
+  stats: [{ value: "500+", label: "Projekte" }, { value: "15+", label: "Jahre" }, { value: "99%", label: "Zufriedenheit" }, { value: "10+", label: "Mitarbeiter" }],
+  benefits: [
+    { title: "Erfahrung", description: "15 Jahre Expertise im Trockenbau.", icon: "Award" },
+    { title: "Qualität", description: "Nur beste Materialien.", icon: "ShieldCheck" },
+    { title: "Pünktlich", description: "Termintreue garantiert.", icon: "Clock" },
+    { title: "Regional", description: "Ihr lokaler Partner in Chemnitz.", icon: "MapPin" },
+  ],
+  reviews: [{ name: "Thomas K.", rating: 5, text: "Sehr professionelle Arbeit, pünktlich und sauber!", date: "2024-06" }],
+  pricing: [],
+  faqItems: [{ question: "Wie lange dauert eine Trennwand?", answer: "Eine einfache Trennwand ist in der Regel in 1-2 Tagen fertig." }],
+  socialMedia: { facebook: "", instagram: "", linkedin: "", youtube: "", tiktok: "" },
+  analytics: { googleAnalyticsId: "" },
+  seo: {
+    titleTemplate: "%s | Trockenbau Non Stop M.M",
+    defaultTitle: "Trockenbau Non Stop M.M – Trockenbau in Chemnitz",
+    defaultDescription: "Professioneller Trockenbau in Chemnitz. 15 Jahre Erfahrung. Jetzt kostenlos anfragen!",
+    keywords: "Trockenbau Chemnitz, Trennwände Chemnitz, Trockenbauer Sachsen",
+    ogImage: "/og-image.jpg",
+    twitterCard: "summary_large_image",
+    locale: "de_DE",
+    siteUrl: "https://trockenbau-nonstop-mm.vercel.app",
   },
-  phoneDisplay: "",
-  phone: "",
-  email: "",
-  address: "",
+  schema: { type: "HomeAndConstructionBusiness", priceRange: "€€", areaServed: "Chemnitz" },
+  sanity: { projectId: "8dczusjp", dataset: "production" },
 };
 
-export default siteConfig;
+export type SiteConfig = typeof siteConfig;
+export type SectionKey = keyof typeof siteConfig.sections;
+export type HeroStyle = typeof siteConfig.layout.heroStyle;
+export type NavStyle = typeof siteConfig.layout.navStyle;
+export type FooterStyle = typeof siteConfig.layout.footerStyle;
